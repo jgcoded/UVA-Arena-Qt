@@ -5,9 +5,9 @@
 
 **UVA Arena** is a cross-platform, non-commercial, open source application made to help programmers become better programmers. UVA Arena uses the [UVA Online Judge](http://uva.onlinejudge.org/) and APIs from [uHunt](http://uhunt.felix-halim.net/) to provide programmers with lots of contest programming problems.
 
-### What's different about this fork?
+### What's different about this version of UVA-Arena?
 
-This fork of **UVA Arena** is an alternative to the [original **UVA Arena** application](https://github.com/dipu-bd/UVA-Arena) developed by [Sudipto Chandra](https://github.com/dipu-bd). Development on this fork concentrates on compatibility with all major operating systems. Cross-compatibility is achieved through the [Qt GUI framework](http://www.qt.io/developers/). This fork also attempts to provide a simple, modern GUI interface while maintaining most of the features available from the original UVA Arena application.
+This version of **UVA Arena** is an alternative to the [original **UVA Arena** application](https://github.com/dipu-bd/UVA-Arena) developed by [Sudipto Chandra](https://github.com/dipu-bd). Development on this fork concentrates on compatibility with all major operating systems. Cross-compatibility is achieved through the [Qt GUI framework](http://www.qt.io/developers/). This fork also attempts to provide a simple, modern GUI interface while maintaining most of the features available from the original UVA Arena application.
 
 Screenshots:
 
