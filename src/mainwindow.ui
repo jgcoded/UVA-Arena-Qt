@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>831</width>
+    <height>569</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>UVA Arena</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../images/images.qrc">
+    <normaloff>:/uva-arena/Main.ico</normaloff>:/uva-arena/Main.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>48</width>
+        <height>24</height>
+       </size>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="icon">
+        <iconset resource="../images/images.qrc">
+         <normaloff>:/uva-arena/problems.png</normaloff>:/uva-arena/problems.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>PROBLEMS</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="ProblemsWidget" name="widget" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="icon">
+        <iconset resource="../images/images.qrc">
+         <normaloff>:/uva-arena/code.png</normaloff>:/uva-arena/code.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>CODES</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="CodesWidget" name="widget_2" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="icon">
+        <iconset resource="../images/images.qrc">
+         <normaloff>:/uva-arena/status.png</normaloff>:/uva-arena/status.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>JUDGE STATUS</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="JudgeStatusWidget" name="widget_3" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="icon">
+        <iconset resource="../images/images.qrc">
+         <normaloff>:/uva-arena/profile.png</normaloff>:/uva-arena/profile.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>PROFILES</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="ProfilesWidget" name="widget_4" native="true"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="icon">
+        <iconset resource="../images/images.qrc">
+         <normaloff>:/uva-arena/utility.png</normaloff>:/uva-arena/utility.png</iconset>
+       </attribute>
+       <attribute name="title">
+        <string>UTILITIES</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>831</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizeGripEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ProblemsWidget</class>
+   <extends>QWidget</extends>
+   <header>widgets/problemswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CodesWidget</class>
+   <extends>QWidget</extends>
+   <header>widgets/codeswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>JudgeStatusWidget</class>
+   <extends>QWidget</extends>
+   <header>widgets/judgestatuswidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ProfilesWidget</class>
+   <extends>QWidget</extends>
+   <header>widgets/profileswidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../images/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
