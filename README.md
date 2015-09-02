@@ -5,9 +5,9 @@
 
 **UVA Arena** is a cross-platform, non-commercial, open source application made to help programmers become better programmers. UVA Arena uses the [UVA Online Judge](http://uva.onlinejudge.org/) and APIs from [uHunt](http://uhunt.felix-halim.net/) to provide programmers with lots of contest programming problems.
 
-### What's different about this fork?
+### What's different about this version of UVA-Arena?
 
-This fork of **UVA Arena** is an alternative to the [original **UVA Arena** application](https://github.com/dipu-bd/UVA-Arena) developed by [Sudipto Chandra](https://github.com/dipu-bd). Development on this fork concentrates on compatibility with all major operating systems. Cross-compatibility is achieved through the [Qt GUI framework](http://www.qt.io/developers/). This fork also attempts to provide a simple, modern GUI interface while maintaining most of the features available from the original UVA Arena application.
+This version of **UVA Arena** is an alternative to the [original **UVA Arena** application](https://github.com/dipu-bd/UVA-Arena) developed by [Sudipto Chandra](https://github.com/dipu-bd). Development on this fork concentrates on compatibility with all major operating systems. Cross-compatibility is achieved through the [Qt GUI framework](http://www.qt.io/developers/). This fork also attempts to provide a simple, modern GUI interface while maintaining most of the features available from the original UVA Arena application.
 
 Screenshots:
 
@@ -20,11 +20,8 @@ Screenshots:
 To request a feature, submit a new issue.
 
 ### Licence Information
-`This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License, version 3.0 as published by the Free Software Foundation.`  
 
-`This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.`  
-
-You should have received a copy of the GNU General Public License along with this program. If no see <http://www.gnu.org/licenses/>
+This software is licensed under the MIT License.
 
 ## Building from source
 
