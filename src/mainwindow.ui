@@ -17,6 +17,9 @@
    <iconset resource="../images/images.qrc">
     <normaloff>:/uva-arena/Main.ico</normaloff>:/uva-arena/Main.ico</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QTabBar::tab { height: 30%; width: 120%; }</string>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
     <property name="leftMargin">
@@ -39,17 +42,7 @@
       <property name="currentIndex">
        <number>0</number>
       </property>
-      <property name="iconSize">
-       <size>
-        <width>48</width>
-        <height>24</height>
-       </size>
-      </property>
       <widget class="QWidget" name="problemsTab">
-       <attribute name="icon">
-        <iconset resource="../images/images.qrc">
-         <normaloff>:/uva-arena/problems.png</normaloff>:/uva-arena/problems.png</iconset>
-       </attribute>
        <attribute name="title">
         <string>Problems</string>
        </attribute>
@@ -60,10 +53,6 @@
        </layout>
       </widget>
       <widget class="QWidget" name="solveTab">
-       <attribute name="icon">
-        <iconset resource="../images/images.qrc">
-         <normaloff>:/uva-arena/code.png</normaloff>:/uva-arena/code.png</iconset>
-       </attribute>
        <attribute name="title">
         <string>Solve</string>
        </attribute>
@@ -108,10 +97,6 @@
        </layout>
       </widget>
       <widget class="QWidget" name="liveEventsTab">
-       <attribute name="icon">
-        <iconset resource="../images/images.qrc">
-         <normaloff>:/uva-arena/status.png</normaloff>:/uva-arena/status.png</iconset>
-       </attribute>
        <attribute name="title">
         <string>Live Events</string>
        </attribute>
@@ -134,10 +119,6 @@
        </layout>
       </widget>
       <widget class="QWidget" name="profilesTab">
-       <attribute name="icon">
-        <iconset resource="../images/images.qrc">
-         <normaloff>:/uva-arena/profile.png</normaloff>:/uva-arena/profile.png</iconset>
-       </attribute>
        <attribute name="title">
         <string>Profiles</string>
        </attribute>

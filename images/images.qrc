@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/uva-arena">
+        <file>Main.ico</file>
+        <file>Main.png</file>
+        <file>Main_small.ico</file>
+    </qresource>
+</RCC>
