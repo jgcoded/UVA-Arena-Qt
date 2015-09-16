@@ -99,7 +99,7 @@ QList<UserRank> Uhunt::userRankingsFromJson(const QByteArray &json)
     QList<UserRank> ranks;
 
     //get json document
-    QJsonDocument& jdoc = QJsonDocument::fromJson(json);
+    QJsonDocument jdoc = QJsonDocument::fromJson(json);
 
     const QJsonArray& jsonArray = jdoc.array();
     QJsonArray::const_iterator it = jsonArray.begin();
@@ -120,7 +120,7 @@ QList<UserSubmission> Uhunt::userSubmissionsFromJson(const QByteArray &json)
     QList<UserSubmission> submissions;
 
     //get json document
-    QJsonDocument& jdoc = QJsonDocument::fromJson(json);
+    QJsonDocument jdoc = QJsonDocument::fromJson(json);
 
     QJsonArray arr = jdoc.array();
     QJsonArray::const_iterator it = arr.begin();

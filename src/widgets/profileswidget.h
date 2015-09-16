@@ -3,7 +3,7 @@
 #include "uvalib_global.h"
 #include "uvaarenawidget.h"
 #include <QWidget>
-#include "models\submissionstablemodel.h"
+#include "models/submissionstablemodel.h"
 #include "QSortFilterProxyModel"
 
 namespace uva

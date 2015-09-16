@@ -1,7 +1,7 @@
 #include "problemstablemodel.h"
 #include "QBrush"
 #include "QFont"
-#include "commons\colorizer.h"
+#include "commons/colorizer.h"
 
 using namespace uva;
 

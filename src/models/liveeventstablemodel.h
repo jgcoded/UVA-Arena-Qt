@@ -2,7 +2,7 @@
 
 #include "arenatablemodel.h"
 #include "mainwindow.h"
-#include "Uhunt/uhunt.h"
+#include "uhunt/uhunt.h"
 #include <QList>
 #include <memory>
 

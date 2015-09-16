@@ -1,6 +1,6 @@
 #include "submissionstablemodel.h"
-#include "commons\conversion.h"
-#include "commons\colorizer.h"
+#include "commons/conversion.h"
+#include "commons/colorizer.h"
 
 uva::SubmissionsTableModel::SubmissionsTableModel()
 {

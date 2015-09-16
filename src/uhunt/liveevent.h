@@ -26,7 +26,7 @@ namespace uva
         //type: type of submission
         QString Type;
 
-        UserSubmission UserSubmission;
+        uva::UserSubmission UserSubmission;
     };
 
 }

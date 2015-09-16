@@ -29,6 +29,6 @@ namespace uva
         // UserId of the submitter
         quint64 UserID;
 
-        Submission Submission;
+        uva::Submission Submission;
     };
 }
