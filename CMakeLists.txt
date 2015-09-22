@@ -82,9 +82,8 @@ if(WIN32)
     add_executable(UVA-Arena app/main.cpp images/icon.rc ${UVA_RESOURCES})
 
 else()
-    
-    add_executable(UVA-Arena app/main.cpp ${UVA_RESOURCES})
-
+    qt5_add_resources(RESOURCES ${UVA_RESOURCES})
+    add_executable(UVA-Arena app/main.cpp ${RESOURCES})
 endif()
 
 target_link_libraries(UVA-Arena ${UVA_DEPENDENCIES})
