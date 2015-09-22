@@ -11,6 +11,7 @@
 #include <QStandardPaths>
 #include <QUrl>
 #include <QPushButton>
+#include <QDesktopServices>
 
 using namespace uva;
 
@@ -231,7 +232,7 @@ void MainWindow::loadPDFByProblemNumber(int problemNumber)
                                                    , pdfFileName);
     }
 }
-#include <QDesktopServices>
+
 void MainWindow::showProblem(int problemNumber)
 {
     typedef UVAArenaSettings::ProblemFormat ProblemFormat;
@@ -250,12 +251,11 @@ void MainWindow::showProblem(int problemNumber)
 void MainWindow::openSettings()
 {
     SettingsDialog dialog;
-    QString oldUserName = mSettings.userName();
     if (dialog.exec() == QDialog::Accepted) {
         // emit new uva arena event
         mUi->pdfViewer->setSaveOnDownload(mSettings.savePDFDocumentsOnDownload());
         QString newUserName = mSettings.userName();
-        if (oldUserName != newUserName) {// new user, get the id
+        if (!newUserName.isEmpty()) {// new user, get the id
 
             QObject::connect(mUhuntApi.get(), &Uhunt::userIDDownloaded,
                 [this, newUserName](QString userName, int userId) {
@@ -268,6 +268,10 @@ void MainWindow::openSettings()
             });
 
             mUhuntApi->userIDFromUserName(mSettings.userName());
+        } else {
+            mSettings.setUserId(-1);
+            setWindowTitle("UVA Arena");
+            emit newUVAArenaEvent(UVAArenaWidget::UVAArenaEvent::UPDATE_SETTINGS, QVariant());
         }
     }
 }

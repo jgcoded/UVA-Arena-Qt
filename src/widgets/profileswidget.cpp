@@ -76,7 +76,14 @@ void uva::ProfilesWidget::onUVAArenaEvent(UVAArenaWidget::UVAArenaEvent arenaEve
     switch (arenaEvent)
     {
     case uva::UVAArenaWidget::UVAArenaEvent::UPDATE_SETTINGS:
-        mUhuntApi->userSubmissionsByUserID(mSettings.userId());
+        if(mSettings.userId() != -1) {
+            mUhuntApi->userSubmissionsByUserID(mSettings.userId());
+            mUi->userNameLabel->setText(mSettings.userName());
+        } else {
+            mSubmissionsTableModel.setSubmissionsList(QList<UserSubmission>());
+            mUi->rankLabel->setText("");
+            mUi->userNameLabel->setText("");
+        }
         break;
 
     default:
